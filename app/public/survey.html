@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation Page</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="text-center">
+                <span class="fa fa-fire"></span> Friend Finder</h1>
+            <hr>
+            <h2 class="text-center">Make Your New Friend Today!</h2>
+            <br>
+
+            <div class="text-center">
+                <!-- <a href="/tables"><button class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> View Tables</button></a> -->
+                <a href="/">
+                    <button class="btn btn-lg btn-default">
+                        <span class="fa fa-home"></span>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Reservation Page -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Tell Us About Yourself</h4>
+                    </div>
+                    <div class="panel-body">
+
+                        <form role="form" id="surveyForm">
+
+                            <div class="form-group">
+                                <label for="friend-name">Name</label>
+                                <input type="text" class="form-control" id="friend-name">
+                            </div>
+
+                            <!-- <div class="form-group">
+                <label for="reserve-phone">Phone Number</label>
+                <input type="text" class="form-control" id="reserve-phone">
+              </div>
+
+              <div class="form-group">
+                <label for="reserve-email">Email</label>
+                <input type="text" class="form-control" id="reserve-email">
+              </div> -->
+
+                            <div class="form-group">
+                                <label for="friend-photo">URL Link To Photo</label>
+                                <input type="text" class="form-control" id="friend-photo">
+                            </div>
+
+                            <!-- QUESTION 1 -->
+                            <hr>
+                            <div class="form-group">
+                                <label for="question-1">
+                                    <strong>Question 1:</strong> Your ideal first date would involve being active.
+                                </label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="question-1" id="1-1" value="1"> 1 - Strongly Disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="question-1" id="1-2" value="2"> 2 - Somewhat Disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="question-1" id="1-3" value="3" checked=""> 3 - Neutral
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="question-1" id="1-4" value="4"> 4 - Somewhat Agree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="question-1" id="1-5" value="5"> 5 - Strongly Agree
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 2 -->
+                            <hr>
+                            <div class="form-group">
+                                <label for="question-2">
+                                    <strong>Question 2:</strong> Your ideal first date would involve being active.
+                                </label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="question-2" id="2-1" value="1"> 1 - Strongly Disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="question-2" id="2-2" value="2"> 2 - Somewhat Disagree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="question-2" id="2-3" value="3" checked=""> 3 - Neutral
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="question-2" id="2-4" value="4"> 4 - Somewhat Agree
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="question-2" id="2-5" value="5"> 5 - Strongly Agree
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <img src="https://images.askmen.com/1080x540/2018/02/21-040457-dating_your_friend_s_ex.jpg" alt="Image"> -->
+
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modalData">
+                            <h5 class="modal-title" id="modalDataName"></h5>
+                            <div id="modalDataPhoto">
+
+                            </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends Link</a>
+                    <!-- | <a href="/api/waitlist">API Wait List</a> -->
+                    |
+                    <a href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- <footer class="footer">
+      <div class="container">
+        <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a> | <a href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a></p>
+      </div>
+    </footer> -->
+
+    </div>
+
+</body>
+
+</html>
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+
+        var formScores = [];
+
+        formScores.push($('input[name=question-1]:checked', '#surveyForm').val());
+        formScores.push($('input[name=question-2]:checked', '#surveyForm').val());
+        // formScores.push($('input[name=question-3]:checked', '#surveyForm').val());
+        // formScores.push($('input[name=question-4]:checked', '#surveyForm').val());
+        // formScores.push($('input[name=question-5]:checked', '#surveyForm').val());
+        // formScores.push($('input[name=question-6]:checked', '#surveyForm').val());
+        // formScores.push($('input[name=question-7]:checked', '#surveyForm').val());
+        // formScores.push($('input[name=question-8]:checked', '#surveyForm').val());
+        // formScores.push($('input[name=question-9]:checked', '#surveyForm').val());
+        // formScores.push($('input[name=question-10]:checked', '#surveyForm').val());
+
+        // Here we grab the form elements
+        var newFriend = {
+            friendName: $("#friend-name").val().trim(),
+            friendPhoto: $("#friend-photo").val().trim(),
+            scores: formScores
+        };
+
+        console.log(newFriend);
+
+        // This line is the magic. It"s very similar to the standard ajax function we used.
+        // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+        // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+        // depending on if a tables is available or not.
+
+        $.post("/api/friends", newFriend,
+            function (data) {
+
+                console.log(data)
+
+                $('#modalDataName').text(data.name);
+                $('#modalDataPhoto').html(`<img src="${data.photo}" alt="Image">`)
+                $('#exampleModal').modal('toggle');
+                
+                // $('#modalData').text(data.photo);
+
+                // $divHolder
+                //     <img src="https://images.askmen.com/1080x540/2018/02/21-040457-dating_your_friend_s_ex.jpg" alt="Image">
+
+
+
+
+
+                // // If a table is available... tell user they are booked.
+                // if (data) {
+                //     alert("Yay! You are officially booked!");
+                // }
+
+                // // If a table is available... tell user they on the waiting list.
+                // else {
+                //     alert("Sorry you are on the wait list");
+                // }
+
+                // Clear the form when submitting
+                $("#friend-name").val("");
+                $("#friend-photo").val("");
+                formScores = [];
+
+            });
+
+    });
+</script>
